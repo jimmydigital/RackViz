@@ -2,7 +2,7 @@
 
 Stylized server-rack face diagrams as SVG — fully static, rendered entirely in the browser. Design a rack in the visual editor, share it as a URL, embed it in a wiki, or download the SVG.
 
-**Live: [jimmydigital.github.io/RackViz](https://jimmydigital.github.io/RackViz/)** — jump straight to the [editor](https://jimmydigital.github.io/RackViz/editor.html).
+**Live: [jimmydigital.github.io/RackViz/src](https://jimmydigital.github.io/RackViz/src/)** — jump straight to the [editor](https://jimmydigital.github.io/RackViz/src/editor.html).
 
 | Futurama (default) | Jetsons | Steampunk | '80s Neon |
 |---|---|---|---|
@@ -19,7 +19,7 @@ Stylized server-rack face diagrams as SVG — fully static, rendered entirely in
 
 ## Quick Start
 
-Use the [hosted version](https://jimmydigital.github.io/RackViz/), or run it locally:
+Use the [hosted version](https://jimmydigital.github.io/RackViz/src/), or run it locally:
 
 ```sh
 cd src
