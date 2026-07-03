@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: #0c1a20;
+  font-family: 'Verdana', 'DejaVu Sans', sans-serif;
+}
+
+.diagram {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.diagram svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.error {
+  margin: 24px auto;
+  max-width: 640px;
+  padding: 14px 18px;
+  border: 2px solid #e0596b;
+  border-radius: 8px;
+  background: #2a141a;
+  color: #ffb3bf;
+  font-size: 14px;
+}

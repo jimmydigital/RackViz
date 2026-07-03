@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RackfaceViz — Editor</title>
+  <link rel="stylesheet" href="editor.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>RackfaceViz <span class="sub">Editor</span></h1>
+    <a class="doclink" href="index.html">Docs &amp; Embedding</a>
+  </header>
+
+  <main class="layout">
+    <section class="controls-panel">
+      <div class="controls-row">
+        <label class="field">
+          <span>Rack Size</span>
+          <input id="rackSize" type="number" min="1" max="60" value="42">
+        </label>
+        <label class="field grow">
+          <span>Title</span>
+          <input id="rackTitle" type="text" maxlength="128" value="Rack Diagram">
+        </label>
+        <label class="field">
+          <span>Style</span>
+          <select id="styleSel"></select>
+        </label>
+        <label class="field" id="paletteWrap">
+          <span>Palette</span>
+          <select id="paletteSel"></select>
+        </label>
+      </div>
+
+      <div id="overflowWarn" class="warn" hidden></div>
+
+      <div id="itemList" class="item-list"></div>
+      <button id="addItemBtn" class="add-btn" type="button">＋ Add Device</button>
+
+      <div class="output-block">
+        <span class="out-label">Items String</span>
+        <div class="copyrow">
+          <textarea id="itemsOut" rows="3" readonly></textarea>
+          <button type="button" class="copy-btn" data-copy="itemsOut">Copy</button>
+        </div>
+      </div>
+      <div class="output-block">
+        <span class="out-label">Shareable URL</span>
+        <div class="copyrow">
+          <textarea id="urlOut" rows="3" readonly></textarea>
+          <button type="button" class="copy-btn" data-copy="urlOut">Copy</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="preview-panel">
+      <div class="preview-head">
+        <h2>Live Preview</h2>
+        <button id="downloadBtn" type="button">⬇ Download SVG</button>
+      </div>
+      <div id="preview" class="preview"></div>
+    </section>
+  </main>
+
+  <script type="module" src="editor.js"></script>
+</body>
+</html>
